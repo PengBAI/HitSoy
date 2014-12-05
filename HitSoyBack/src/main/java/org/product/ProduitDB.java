@@ -9,8 +9,8 @@ public class ProduitDB {
 
 	private ProduitFile produitFile;
 	/**
-	 * Cr�er une base de donn�es du produit
-	 * @param string le path de base de donn�es
+	 * Créer une base de données du produit
+	 * @param string le path de base de données
 	 * @return
 	 */
 	public ProduitFile ProduitDB_create(String path) {
@@ -28,7 +28,7 @@ public class ProduitDB {
 	}
 
 	/**
-	 * flush cache donn�es, fermer la base de donn�es 
+	 * flush cache données, fermer la base de données 
 	 */
 	public void ProduitDB_close() {
 		// TODO Auto-generated method stub
@@ -36,7 +36,7 @@ public class ProduitDB {
 	}
 
 	/**
-	 * ouvrir une base de donn�es existe du produit
+	 * ouvrir une base de données existe du produit
 	 * @param string
 	 * @return un ProduitFile
 	 */
@@ -46,7 +46,7 @@ public class ProduitDB {
 	}
 
 	/**
-	 * r�cup�rer le nombre de record du produit dans la base de donn�es
+	 * récupérer le nombre de record du produit dans la base de données
 	 * @param produitDB
 	 * @return le nombre de record du produit recordCount
 	 */
@@ -56,7 +56,7 @@ public class ProduitDB {
 	}
 
 	/**
-	 * remove la base de donn�es 
+	 * remove la base de données 
 	 * @param string le path de fichier 
 	 */
 	public void ProduitDB_remove(String string) {
@@ -65,9 +65,9 @@ public class ProduitDB {
 	}
 
 	/**
-	 * modifier le record � la position i 
+	 * modifier le record à la position i 
 	 * @param i position
-	 * @param produitRecord record contient des donn�es
+	 * @param produitRecord record contient des données
 	 */
 	public void ProduitDB_writeRecord(int i, Produit produitRecord) {
 		// TODO Auto-generated method stub
@@ -75,9 +75,9 @@ public class ProduitDB {
 	}
 
 	/**
-	 * lire un record � la position i
+	 * lecture un record à la position i
 	 * @param i 
-	 * @param produitRecord record � remplir
+	 * @param produitRecord record à remplir
 	 */
 	public void ProduitDB_readRecord(int i, Produit produitRecord) {
 		// TODO Auto-generated method stub
@@ -85,7 +85,7 @@ public class ProduitDB {
 	}
 
 	/**
-	 * apprend un record � la fin de la base de donn�es
+	 * apprend un record à la fin de la base de données
 	 * @param produitRecord le record
 	 */
 	public void ProduitDB_appendRecord(Produit produitRecord) {
@@ -94,8 +94,8 @@ public class ProduitDB {
 	}
 
 	/**
-	 * ouvrir si exist ou cr�er une base de donn�es du produit
-	 * @param string le path de base de donn�es
+	 * ouvrir si exist ou créer une base de données du produit
+	 * @param string le path de base de données
 	 * @return un ProduitFile 
 	 */
 	public ProduitFile ProduitDB_openOrCreate(String string) {
@@ -104,7 +104,7 @@ public class ProduitDB {
 	}
 
 	/**
-	 * remove un record � la position i 
+	 * remove un record à la position i 
 	 * @param i position
 	 */
 	public void ProduitDB_removeRecord(int i) {
@@ -113,7 +113,7 @@ public class ProduitDB {
 	}
 
 	/**
-	 * ins�rer le record � la position i
+	 * insérer le record à la position i
 	 * @param i position
 	 * @param produitRecord le record
 	 */

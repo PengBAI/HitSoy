@@ -6,7 +6,7 @@ package org.document;
  * */
 public class DocumentRow {
 	String code;
-	String destination;
+	String designation;
 	double quantity;
 	String unity;
 	double basePrice;
@@ -15,18 +15,33 @@ public class DocumentRow {
 	double rateOfVAT; 
 	DocumentRow next;
 	
+	/**
+	 * set code
+	 * @param _code
+	 */
 	public void setCode(String _code){
 		code = _code;
 	}
 	
-	public void setDestination(String des){
-		destination = des;
+	/**
+	 * set designation
+	 * @param des
+	 */
+	public void setDesignation(String des){
+		designation = des;
 	}
-	
+	/**
+	 * set quantity
+	 * @param qua
+	 */
 	public void setQuantity(double qua){
 		quantity = qua;
 	}	
 	
+	/**
+	 * set unity
+	 * @param uni
+	 */
 	public void setUnity(String uni){
 		unity = uni;
 	}	
